@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moja Strona</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            overflow: hidden;
+            cursor: pointer; /* Zmienia kursor na rączkę, sugerując, że można kliknąć */
+        }
+        img {
+            max-width: 90%;
+            max-height: 80vh;
+            object-fit: contain;
+        }
+    </style>
+</head>
+<body>
+
+    <img src="owca.gif" alt="Owca GIF">
+
+    <audio id="muzykaTlo" loop>
+        <source src="owca.mp3" type="audio/mpeg">
+    </audio>
+
+    <script>
+        // Krótki skrypt: kliknięcie gdziekolwiek na stronie uruchamia dźwięk
+        document.body.addEventListener('click', function() {
+            var audio = document.getElementById('muzykaTlo');
+            audio.play();
+        });
+    </script>
+
+</body>
+</html>
