@@ -1,25 +1,21 @@
-<!DOCTYPE html>
-<html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Moja Strona</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            background-color: #ffffff;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            overflow: hidden;
-            cursor: pointer; /* Zmienia kursor na rączkę, sugerując, że można kliknąć */
+flow: hidden;
+            cursor: pointer;
         }
         img {
             max-width: 90%;
             max-height: 80vh;
             object-fit: contain;
+        }
+        /* Styl dla przycisku */
+        .btn-redirect {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #720646; /* Przykładowy kolor logo - zmień na odpowiedni dla konkretnej partii */
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-family: Arial, sans-serif;
+            font-weight: bold;
         }
     </style>
 </head>
@@ -27,9 +23,13 @@
 
     <img src="owca.gif" alt="Owca GIF">
 
+    <!-- Ukryty odtwarzacz z funkcją loop (pętla) -->
     <audio id="muzykaTlo" loop>
         <source src="owca.mp3" type="audio/mpeg">
     </audio>
+
+    <!-- Przycisk do innej strony -->
+    <a href="https://owca2026.pl/" class="btn-redirect">to nie ta strona</a>
 
     <script>
         // Krótki skrypt: kliknięcie gdziekolwiek na stronie uruchamia dźwięk
